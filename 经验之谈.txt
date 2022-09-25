@@ -1,0 +1,3 @@
+安装pycharm后要去添加interpret，system的，安装路径一般在C:\Users\19484\AppData\Local\Programs\Python\Python310，
+然后要在环境变量Path中添加pip的路径
+C:\Users\19484\AppData\Local\Programs\Python\Python310\Scripts
