@@ -7,13 +7,13 @@ import jieba.posseg as psg
 
 #######预处理
 
-output_path = 'D:/python/lda/result'
-file_path = 'D:/python/lda/data'
+output_path = 'C:/Users/19484/Documents/LDA/lda/result'
+file_path = 'C:/Users/19484/Documents/LDA/lda/data'
 os.chdir(file_path)
 data=pd.read_excel("data.xlsx")#content type
 os.chdir(output_path)
-dic_file = "D:/python/lda/stop_dic/dict.txt"
-stop_file = "D:/python/lda/stop_dic/stopwords.txt"
+dic_file = "C:/Users/19484/Documents/LDA/lda/stop_dic/dict.txt"
+stop_file = "C:/Users/19484/Documents/LDA/lda/stop_dic/stopwords.txt"
 
 
 def chinese_word_cut(mytext):
@@ -102,7 +102,7 @@ data['topic']=topic
 data.to_excel("data_topic.xlsx",index=False)
 topics[0]#0 1 2
 
-'''
+
 ju=lda.fit_transform(tf)
 sum=[]
 cnt=0
@@ -122,7 +122,7 @@ exit()
 ju=lda.fit_transform(tf)
 print(ju)
 exit()
-'''
+
 ###########可视化
 
 import pyLDAvis
