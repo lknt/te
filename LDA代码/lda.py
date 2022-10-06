@@ -76,7 +76,7 @@ tf_vectorizer = CountVectorizer(strip_accents = 'unicode',
 tf = tf_vectorizer.fit_transform(data.content_cutted)
 
 
-n_topics = 12
+n_topics = 18
 lda = LatentDirichletAllocation(n_components=n_topics, max_iter=50,
                                 learning_method='batch',
                                 learning_offset=50,
